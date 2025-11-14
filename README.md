@@ -65,7 +65,8 @@ Tabel ini mencakup semua jaringan LAN dan Link WAN, serta detail IP Address leng
 
 ## 4. Hasil Perhitungan CIDR Lengkap
 
-![Agregrasi](https://github.com/user-attachments/assets/dfa92381-c1a8-4c2f-8521-27d007fcd827)
+<img width="1306" height="774" alt="image" src="https://github.com/user-attachments/assets/66e15699-c7ad-45f6-b052-2c7e374ac865" />
+
 
 
 ### 4.1 Tabel Hasil CIDR Lengkap
