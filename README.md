@@ -98,6 +98,15 @@ Tabel ini menunjukkan proses bertahap bagaimana subnet-subnet VLSM digabungkan m
 | **Agregasi 1 (Blok 3)** | `10.65.3.0` | `10.65.3.255` | `/24` |
 | **Hasil Agregasi Total (CIDR)** | $\mathbf{10.65.0.0}$ | $\mathbf{10.65.3.255}$ | $\mathbf{/22}$ |
 
+#### Tahap 3: Agregasi Jaringan Total (Pusat & Cabang)
+
+| Anggota Jaringan | NID (Network Address) | Broadcast Address | Prefix | Keterangan |
+| :--- | :--- | :--- | :--- | :--- |
+| **Blok 1 (Sekretariat)** | `10.65.0.0` | `10.65.1.255` | `/23` | Rangkuman Jaringan Sekretariat |
+| **Blok 2 (Kurikulum)** | `10.65.2.0` | `10.65.2.255` | `/24` | Jaringan Kurikulum |
+| **Blok 3 (Lainnya/Agregasi)** | `10.65.3.0` | `10.65.3.255` | `/24` | Mencakup semua sub-jaringan .3.x (Termasuk Cabang) |
+| **Hasil Agregasi Total (CIDR)** | **`10.65.0.0`** | **`10.65.3.255`** | **`/22`** | Rute Ringkasan (Summary Route) |
+
 ## 5. Visualisasi Struktur Jaringan VLSM dan CIDR
 
 Visualisasi ini menunjukkan hierarki subnetting (VLSM) dan penggabungan (CIDR) di bawah alokasi total **10.65.0.0/22**.
